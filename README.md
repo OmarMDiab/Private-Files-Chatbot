@@ -3,7 +3,7 @@ Using huggingface and langchain this app offers: -
 - **Model Switching:** Easily switch between different Huggingface models as per your requirements.
 - **Document Chat:** Chat with your documents, including `(CSV, DOCX, PPTX, PDF)` files. Upload your documents and start querying them.
 
-Note: You need to add an `.env` file with your huggingface api token (Permission: write) or you can just run with your local model but make sure to uncomment the LlamaCpp block in get_conversation_chain and pass your model path
+Note: You need to add an `.env` file with your huggingface api token (Permission: write) or you can just run with your local model but make sure to uncomment the LlamaCpp code block in get_conversation_chain and pass your model path
 
 ## Sample Run Videos
 - [PDF Sample Run](https://drive.google.com/file/d/1pV-0HFy6f2Bj5J7dVN_MSCCbyjsbkS6i/view?usp=sharing)
