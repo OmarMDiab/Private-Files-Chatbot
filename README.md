@@ -3,7 +3,7 @@ Using huggingface and langchain this app offers: -
 - **Model Switching:** Easily switch between different Huggingface models as per your requirements.
 - **Document Chat:** Chat with your documents, including `(CSV, DOCX, PPTX, PDF)` files. Upload your documents and start querying them.
 
-Note: You need to add an `.env` file with your huggingface api token (Permission: write) or you can just run with your local model but make sure to uncomment the LlamaCpp code block in get_conversation_chain and pass your model path
+**Note:** You need to add an `.env` file with your huggingface api token with `(Permission: write)` or you can just run with your local model but make sure to uncomment the LlamaCpp code block in `get_conversation_chain` and pass your Model path
 
 ## Sample Run Videos
 - [PDF Sample Run](https://drive.google.com/file/d/1pV-0HFy6f2Bj5J7dVN_MSCCbyjsbkS6i/view?usp=sharing)
@@ -28,4 +28,8 @@ python Chatgbt_Ghost.py
 
 - Switching models mid conversation **resets** the chat_history (your past questions)
 
-- Files can be embedded as text_based files or CSV files not both (resitriction made to improve prompt_response accuracy)
+- Files can be embedded as **text_based files** or **CSV files** not both. This resitriction was made to improve Response accuracy.
+
+- Chat history is Disabled with CSV files, As we are only retreiving Data So, To ensure that the retreival is at its best accuracy and not confusing the model with past prompts values.
+
+
