@@ -1,4 +1,4 @@
-# Chatgbt Ghost: A private Chatgbt clone
+# ChatGPT Ghost: A Private ChatGPT Clone
 Using huggingface and langchain this app offers: -
 - **Model Switching:** Easily switch between different Huggingface models as per your requirements.
 - **Document Chat:** Chat with your documents, including `(CSV, DOCX, PPTX, PDF)` files. Upload your documents and start querying them.
