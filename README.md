@@ -5,11 +5,7 @@ Using huggingface and langchain this app offers: -
 
 **Note:** You need to add an `.env` file with your huggingface api token with `(Permission: write)` or you can just run with your local model but make sure to uncomment the LlamaCpp code block in `get_conversation_chain` and pass your Model path
 
-## Sample Run Videos
-- [PDF Sample Run](https://drive.google.com/file/d/1pV-0HFy6f2Bj5J7dVN_MSCCbyjsbkS6i/view?usp=sharing)
-- [CSV Sample Run](https://drive.google.com/file/d/11Zrc1USczjzVT6I5MQ9HQr68aot1Qr5i/view?usp=sharing)
-  
-## Easy Run ^^
+## Easy Run 
 In this Streamlit App you only just have to run the python script **`without`** the need of this code: `streamlit run script.py`
 
 Just run: -
