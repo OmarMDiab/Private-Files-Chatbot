@@ -81,14 +81,14 @@ def get_conversation_chain(vector_store,llm_model):
 
 
 # if you want to run locally using Mistral model uncomment the following code: -  
-#     llm = LlamaCpp(
-#     model_path=r"Models\mistral-7b-instruct-v0.2.Q4_K_S.gguf",
-#     temperature=0.5,
-    # n_ctx=1048 
-#     # top_p=1, 
-#     # verbose=True,
-#     
-# ) 
+    # llm = LlamaCpp(
+    # model_path=r"C:\Users\omarmosaad\.cache\lm-studio\models\TheBloke\Mistral-7B-Instruct-v0.2-GGUF",
+    # temperature=0.5,
+    # n_ctx=1048, 
+    # top_p=1, 
+    # verbose=True
+    # ) 
+
             
 
     memory = ConversationBufferMemory(
@@ -157,7 +157,7 @@ def main():
     with Model_col:
         llm_model = st.selectbox(
             "Choose a Model",
-            ("None","google/flan-t5-xxl","google/flan-t5-small", "google/flan-t5-base"),index=0, key="model")
+            ("None","google/flan-t5-xxl","google/gemma-2-27b", "google/flan-t5-base"),index=0, key="model")
         
         # Change model in mid conversation!
         if st.session_state.vector_store:
@@ -255,12 +255,12 @@ def main():
             st.markdown(bot_response)
 
 
-# main() # for streamlit run Chatgbt_Ghost.py
+main() # for streamlit run Chatgbt_Ghost.py
 
 
 
-if __name__ == '__main__':
-    if len(sys.argv) > 1 and sys.argv[1] == 'run':
-        main()
-    else:
-        subprocess.run(['streamlit', 'run', sys.argv[0], 'run'])
+# if __name__ == '__main__':
+#     if len(sys.argv) > 1 and sys.argv[1] == 'run':
+#         main()
+#     else:
+#         subprocess.run(['streamlit', 'run', sys.argv[0], 'run'])
