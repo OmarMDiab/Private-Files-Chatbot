@@ -1,4 +1,4 @@
-# Private ChatGPT Clone
+# Private files Chatbot
 
 Using huggingface and langchain this app offers: -
 
